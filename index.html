@@ -3,87 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Computing Hub</title>
+    <title>Explore the Universe</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4d5f1e89b4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<header>
-    <h1>☁ Cloud Computing Hub</h1>
+<div id="loader">
+    <div class="planet-loader"></div>
+    <h2>Launching...</h2>
+</div>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Platforms</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header>
+
+<nav>
+
+<h1 class="logo">
+<i class="fas fa-rocket"></i> Universe
+</h1>
+
+<ul>
+
+<li><a href="index.html" class="active">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="planet.html">Planets</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
 <section class="hero">
 
-    <h2>Explore the Future of Cloud Computing</h2>
+<div class="overlay"></div>
 
-    <p>
-        Learn, Build and Deploy applications using modern cloud platforms.
-    </p>
+<div class="hero-content">
 
-    <button onclick="showMessage()">
-        Explore More
-    </button>
+<h4>WELCOME TO SPACE</h4>
 
-</section>
-
-<section id="about">
-
-<h2>About Cloud Computing</h2>
+<h1>
+Explore the <span>Universe</span>
+</h1>
 
 <p>
-Cloud computing delivers computing services like servers,
-storage, databases, networking and software over the internet.
-It enables faster innovation, flexible resources and lower costs.
+
+Discover breathtaking planets, distant galaxies and
+the beauty hidden beyond Earth's atmosphere.
+
 </p>
+
+<div class="buttons">
+
+<a href="planet.html" class="btn">
+Explore Planets
+</a>
+
+<a href="about.html" class="btn2">
+Learn More
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-<section id="services">
+<section class="features">
 
-<h2>Popular Cloud Platforms</h2>
+<h2>Why Explore Space?</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>AWS</h3>
-<p>Amazon Web Services</p>
 
-<a href="https://aws.amazon.com" target="_blank">
-Visit AWS
-</a>
+<i class="fas fa-globe"></i>
 
-</div>
+<h3>Planets</h3>
 
-<div class="card">
+<p>
 
-<h3>Microsoft Azure</h3>
+Learn fascinating facts about every planet in our
+solar system.
 
-<p>Enterprise Cloud Platform</p>
-
-<a href="https://azure.microsoft.com" target="_blank">
-Visit Azure
-</a>
+</p>
 
 </div>
 
 <div class="card">
 
-<h3>Google Cloud</h3>
+<i class="fas fa-star"></i>
 
-<p>AI Powered Cloud Platform</p>
+<h3>Stars</h3>
 
-<a href="https://cloud.google.com" target="_blank">
-Visit GCP
-</a>
+<p>
+
+Discover massive stars that shine millions of light
+years away.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-meteor"></i>
+
+<h3>Asteroids</h3>
+
+<p>
+
+Understand mysterious objects traveling through space.
+
+</p>
 
 </div>
 
@@ -91,49 +134,79 @@ Visit GCP
 
 </section>
 
-<section id="resources">
+<section class="stats">
 
-<h2>Useful Resources</h2>
+<div class="stat">
 
-<ul>
+<h2 class="counter" data-target="8">0</h2>
 
-<li>
-<a href="https://github.com" target="_blank">
-GitHub
-</a>
-</li>
+<p>Planets</p>
 
-<li>
-<a href="https://www.cloudflare.com" target="_blank">
-Cloudflare
-</a>
-</li>
+</div>
 
-<li>
-<a href="https://www.ibm.com/cloud" target="_blank">
-IBM Cloud
-</a>
-</li>
+<div class="stat">
 
-</ul>
+<h2 class="counter" data-target="200">0</h2>
+
+<p>Moons</p>
+
+</div>
+
+<div class="stat">
+
+<h2 class="counter" data-target="1000000">0</h2>
+
+<p>Stars Estimated</p>
+
+</div>
 
 </section>
 
-<section id="contact">
+<section class="gallery-preview">
 
-<h2>Contact</h2>
+<h2>Featured Images</h2>
 
-<p>Email : cloudhub@gmail.com</p>
+<div class="gallery-grid">
+
+<img src="images/earth.jpg">
+
+<img src="images/mars.jpg">
+
+<img src="images/stars.jpg">
+
+</div>
+
+<a href="gallery.html" class="btn">
+View Full Gallery
+</a>
 
 </section>
 
 <footer>
 
+<h3>Explore the Universe</h3>
+
 <p>
-Made with ❤ using HTML, CSS & JavaScript
+
+Designed using HTML, CSS & JavaScript
+
 </p>
 
+<div class="social">
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-github"></i>
+
+<i class="fab fa-linkedin"></i>
+
+</div>
+
 </footer>
+
+<button id="topBtn">
+<i class="fas fa-arrow-up"></i>
+</button>
 
 <script src="script.js"></script>
 
